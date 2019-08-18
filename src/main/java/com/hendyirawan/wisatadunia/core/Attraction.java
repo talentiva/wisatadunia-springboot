@@ -12,7 +12,7 @@ public class Attraction {
     private String subtitle;
     private String description;
     private Double distance;
-    private Double duration;
+    private Integer duration;
     private Integer rank;
     private Double latitude;
     private Double longitude;
@@ -69,11 +69,11 @@ public class Attraction {
         this.distance = distance;
     }
 
-    public Double getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
-    public void setDuration(Double duration) {
+    public void setDuration(Integer duration) {
         this.duration = duration;
     }
 

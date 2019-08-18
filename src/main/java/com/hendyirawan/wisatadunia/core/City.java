@@ -11,6 +11,8 @@ public class City {
     private String shortDesc;
     private String timeZone;
     private String fileName;
+    private Double temperatureCelsius;
+    private String weather;
 
     @ManyToOne
     private Country country;
@@ -61,5 +63,21 @@ public class City {
 
     public void setCountry(Country country) {
         this.country = country;
+    }
+
+    public Double getTemperatureCelsius() {
+        return temperatureCelsius;
+    }
+
+    public void setTemperatureCelsius(Double temperatureCelsius) {
+        this.temperatureCelsius = temperatureCelsius;
+    }
+
+    public String getWeather() {
+        return weather;
+    }
+
+    public void setWeather(String weather) {
+        this.weather = weather;
     }
 }

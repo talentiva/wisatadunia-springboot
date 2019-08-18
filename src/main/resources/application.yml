@@ -1,0 +1,10 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  datasource:
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      # "ddl-auto: validate" will check DB schema, but takes long time for remote DB
+      ddl-auto: none

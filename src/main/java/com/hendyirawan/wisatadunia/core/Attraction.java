@@ -10,6 +10,7 @@ public class Attraction {
     private Integer id;
     private String name;
     private String subtitle;
+    private boolean favorited;
     private String description;
     private Double distance;
     private Integer duration;
@@ -51,6 +52,14 @@ public class Attraction {
 
     public void setSubtitle(String subtitle) {
         this.subtitle = subtitle;
+    }
+
+    public boolean isFavorited() {
+        return favorited;
+    }
+
+    public void setFavorited(boolean favorited) {
+        this.favorited = favorited;
     }
 
     public String getDescription() {

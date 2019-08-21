@@ -7,5 +7,6 @@ import java.util.List;
 
 public interface AttractionRepository extends JpaRepository<Attraction, Integer> {
     List<Attraction> findAllByCityId(Integer cityId);
-    List<Attraction> findAllByCityIdAndAttractionCategoryId(Integer cityId, Integer attractionCategoryId);
+    List<Attraction> findAllByCityIdAndAttractionCategoryId(
+            Integer cityId, Integer attractionCategoryId);
 }

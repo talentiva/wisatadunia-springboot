@@ -2,8 +2,7 @@ package com.hendyirawan.wisatadunia.core;
 
 import org.springframework.data.rest.core.config.Projection;
 
-@Projection(name = "cityRelated",
-        types = {City.class})
+@Projection(name = "cityRelated", types = {City.class})
 public interface CityRelated {
     Integer getId();
     String getName();

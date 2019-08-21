@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-@RequestMapping("/cities")
+//@RestController
+//@RequestMapping("/cities")
 public class CitiesController {
     private static final Logger log = LoggerFactory.getLogger(CitiesController.class);
 

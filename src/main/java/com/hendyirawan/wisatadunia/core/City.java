@@ -1,11 +1,6 @@
 package com.hendyirawan.wisatadunia.core;
 
-import javax.persistence.*;
-
-@Entity
 public class City {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String shortDesc;
@@ -14,7 +9,6 @@ public class City {
     private Double temperatureCelsius;
     private String weather;
 
-    @ManyToOne
     private Country country;
 
     public Integer getId() {

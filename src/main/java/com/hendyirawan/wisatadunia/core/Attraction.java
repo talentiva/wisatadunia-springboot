@@ -1,12 +1,7 @@
 package com.hendyirawan.wisatadunia.core;
 
-import javax.persistence.*;
-
-@Entity
 public class Attraction {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String subtitle;
@@ -25,9 +20,7 @@ public class Attraction {
     private String website;
     private String fileName;
 
-    @ManyToOne
     private City city;
-    @ManyToOne
     private AttractionCategory attractionCategory;
 
     public Integer getId() {

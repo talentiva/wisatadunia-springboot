@@ -65,19 +65,11 @@ public class City {
         this.country = country;
     }
 
-    public Double getTemperatureCelsius() {
-        return temperatureCelsius;
-    }
+    public Double getTemperatureCelsius() { return temperatureCelsius; }
 
-    public void setTemperatureCelsius(Double temperatureCelsius) {
-        this.temperatureCelsius = temperatureCelsius;
-    }
+    public void setTemperatureCelsius(Double temperatureCelsius) { this.temperatureCelsius = temperatureCelsius; }
 
-    public String getWeather() {
-        return weather;
-    }
+    public String getWeather() { return weather; }
 
-    public void setWeather(String weather) {
-        this.weather = weather;
-    }
+    public void setWeather(String weather) { this.weather = weather; }
 }
